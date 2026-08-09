@@ -1,0 +1,29 @@
+# Central-Login Configuration
+
+# Database settings
+database:
+  type: sqlite
+  location: plugins/Central-Login/
+
+# Login settings
+login:
+  session-timeout: 30  # minutes
+  max-attempts: 3
+  lockout-time: 15     # minutes
+  require-email: false # Set to true to make email mandatory during registration
+
+# UI settings
+ui:
+  login-title: "§6Central-Login - Login"
+  register-title: "§6Central-Login - Register"
+  glass-color: "LIGHT_BLUE_STAINED_GLASS_PANE"
+  button-color: "LIME_CONCRETE"
+
+# Messages
+messages:
+  welcome: "§6[Central-Login] §fWelcome to the server!"
+  login-required: "§6[Central-Login] §cYou must log in to play!"
+  registration-required: "§6[Central-Login] §cYou must register to play!"
+  invalid-password: "§6[Central-Login] §cInvalid password!"
+  registration-complete: "§6[Central-Login] §aRegistration successful!"
+  login-complete: "§6[Central-Login] §aLogin successful!"

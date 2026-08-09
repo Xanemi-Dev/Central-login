@@ -1,0 +1,31 @@
+name: Central-Login
+version: 1.0.0
+main: com.xanemidev.login.CentralLoginPlugin
+description: A lightweight login and registration plugin for Minecraft servers
+authors:
+  - Xanemi-Dev
+website: https://github.com/Xanemi-Dev/Central-login
+
+commands:
+  login:
+    description: Open the login UI
+    usage: /<command>
+  register:
+    description: Open the registration UI
+    usage: /<command>
+  unregister:
+    description: Unregister your account
+    usage: /<command> [player]
+    permission: central-login.admin
+  loginadmin:
+    description: Admin commands for login plugin
+    usage: /<command> <reload|reset>
+    permission: central-login.admin
+
+permissions:
+  central-login.admin:
+    description: Access to admin commands
+    default: op
+  central-login.bypass:
+    description: Bypass login requirement
+    default: false
